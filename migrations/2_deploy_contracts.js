@@ -1,5 +1,5 @@
-const ShoutoutContract = artifacts.require("ShoutoutContract")
+const StarContract = artifacts.require("StarContract")
 
 module.exports = function (deployer) {
-    deployer.deploy(ShoutoutContract)
+    deployer.deploy(StarContract)
 }
