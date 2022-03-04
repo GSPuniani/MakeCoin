@@ -26,7 +26,6 @@
 require('dotenv').config()
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const DefaultBuilder = require("truffle-default-builder");
 const infuraKey = process.env.INFURA_KEY;
 const mnemonic = process.env.MNEMONIC;
 
@@ -79,13 +78,6 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
   },
-
-  build: new DefaultBuilder({
-    "index.html": "index.html",
-    "app.js": [
-      "js/index.js"
-    ]
-  }),
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
